@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Poiret+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" type="imagem/png" href="img/favicon1.jpg" />
+    <script src="https://kit.fontawesome.com/61900b29bb.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <title>EL VAVA</title>
+</head>
+<body>
+    <main id="principal">
+        <div id="myModal" class="modal">  
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="formulary" class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Nome" id="first_name" type="text" class="validate">
+                                <label for="first_name"></label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input placeholder="Sobrenome" id="last_name" type="text" class="validate">
+                                <label for="last_name"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Senha" id="password" type="password" class="validate">
+                                <label for="password"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="E-mail" id="email" type="email" class="validate">
+                                <label for="email"></label>
+                            </div>
+                        </div>
+                        <input type="submit" value="CADASTRAR" class="btn-form" onclick="validacao()">
+                        <input type="reset" value="LIMPAR" class="btn-form">
+                        <p id="validacao"></p>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section id="screen-one">
+            <header id="top">
+                <figure id="logo"></figure>
+                <nav class="grey darken-4">
+                    <ul id="menu">
+                        <a href='#btn-second-screen'>
+                            <li>NOVIDADES</li>
+                        </a>
+                        <a href='#screen-three'>
+                            <li>AGENTES</li>
+                        </a>
+                        <a href='#screen-four'>
+                            <li>ARMAS</li>
+                        </a>
+                        <a href='#screen-five'>
+                            <li>MAPAS</li>
+                        </a>
+                        <a onclick="openModal()" id="modal">
+                            <li>CADASTRE-SE</li>
+                        </a>
+                    </ul>
+                </nav>
+            </header>
+                <div id="content-screen-one">
+                    <h1 id="title">Valorant</h1>
+                    <h3 id="sub-title">Um jogo de tiro tático 5x5</h3>
+                    <h3 id="sub-title">Desafie seus limites</h3>
+                    <div id="sub-content">
+                        <button id="btn-second-screen" class="btn-large">NOVO AGENTE</button>
+                        <button id="btn-second-screen" class="btn-large">VEJA AS NOVIDADES</button>
+                    </div>
+                </div>
+        </section>
+        <section id="screen-two">
+            <div id="new-agent-content">
+                <aside id="new-agent-banner">
+                    <figure>
+                        <img id="new-agent" src="img/kayo-card.png">
+                    </figure>
+                </aside>
+                <aside id="new-agent-info">
+                    <h1 id="title-card">KAY/O</h1>
+                    <h3 id="description-card"> Este Episódio 3 chega com uma novidade em destaque.</h3>
+                    <h3 id="description-card"> Uma máquina de guerra que foi criada com um único propósito: <br>NEUTRALIZAR RADIANTES</h3>
+                    <h3 id="description-card"> Neutralizar Radiantes</h3>
+                    <p id=""> O androide tem o poder de desativar as habilidades adversárias.</p>
+                    <p> Ele também possui uma granada de impacto e uma flashbang em seu repertório, e sua Ultimate pode desativar </p>
+                    <p> habilidades adversárias, além de permitir que o Agente seja revivido.</p>
+                </aside>
+            </div>
+        </section>
+        <section id="screen-three">
+            <div id="agent-gallery">
+                <h1 class="title-gallery" id="agent-title">Agentes</h1>
+                <div class="carousel" id="agent-carousel">
+                    <a id="subtitle-agent" class="carousel-item" href="#one!">Jett<img src="/img/jett.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#two!">Raze<img src="/img/raze.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#three!">Breach<img src="/img/breach.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#four!">Omen<img src="/img/omen.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#five!">Brimstone<img src="/img/brimstone.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Sage<img src="/img/sage.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Sova<img src="/img/sova.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Viper<img src="/img/viper.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Cypher<img src="/img/cypher.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Reyna<img src="/img/reyna.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Killjoy<img src="/img/killjoy.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Skye<img src="/img/skye.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Yoru<img src="/img/yoru.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Astra<img src="/img/astra.png"></a>
+                    <a id="subtitle-agent" class="carousel-item" href="#six!">Kayo<img src="/img/kayo.png"></a>
+                </div>
+            </div>
+        </section>
+        <section id="screen-four">
+            <h1 class="title-gallery">Armas</h1>
+            <div id="gun-gallery">
+                <figure>
+                    <img src="img/classic.png" alt="Classic">
+                    <p>Classic</p>
+                </figure>
+                <figure>
+                    <img src="img/shorty.png" alt="Shorty">
+                    <p>Shorty</p>
+                </figure>
+                <figure>
+                    <img src="img/frenzy.png" alt="Frenzy">
+                    <p>Frenzy</p>
+                </figure>
+                <figure>
+                    <img src="img/ghost.png" alt="Ghost">
+                    <p>Ghost</p>
+                </figure>
+                <figure>
+                    <img src="img/sheriff.png" alt="Sheriff">
+                    <p>Sheriff</p>
+                </figure>
+                <figure>
+                    <img src="img/stinger.png" alt="Stinger">
+                    <p>Stinger</p>
+                </figure>
+                <figure>
+                    <img src="img/spectre.png" alt="Spectre">
+                    <p>Spectre</p>
+                </figure>
+                <figure>
+                    <img src="img/bucky.png" alt="Bucky">
+                    <p>Bucky</p>
+                </figure>
+                <figure>
+                    <img src="img/judge.png" alt="Judge">
+                    <p>Judge</p>
+                </figure>
+                <figure>
+                    <img src="img/bulldog.png" alt="Bulldog">
+                    <p>Bulldog</p>
+                </figure>
+                <figure>
+                    <img src="img/guardian.png" alt="Guardian">
+                    <p>Guardian</p>
+                </figure>
+                <figure>
+                    <img src="img/phantom.png" alt="Phantom">
+                    <p>Phantom</p>
+                </figure>
+                <figure>
+                    <img src="img/vandal.png" alt="Vandal">
+                    <p>Vandal</p>
+                </figure>
+                <figure>
+                    <img src="img/marshal.png" alt="Marshal">
+                    <p>Marshal</p>
+                </figure>
+                <figure>
+                    <img src="img/operator.png" alt="Operator">
+                    <p>Operator</p>
+                </figure>
+                <figure>
+                    <img src="img/ares.png" alt="Ares">
+                    <p>Ares</p>
+                </figure>
+                <figure>
+                    <img src="img/odin.png" alt="Odin">
+                    <p>Odin</p>
+                </figure>
+                <figure>
+                    <img src="img/tactical-knife.png" alt="Faca tática">
+                    <p>Faca tática</p>
+                </figure>
+            </div>
+        </section>
+        <section id="screen-five">
+            <h1 class="title-gallery">Mapas</h1>
+            <div id="map-gallery" class="carousel carousel-slider center">
+                  <div class="carousel-item white-text" href="#one!" id="breeze">
+                    <h2>Breeze</h2>
+                  </div>
+                  <div class="carousel-item white-text" href="#two!" id="icebox">
+                    <h2>Icebox</h2>
+                  </div>
+                  <div class="carousel-item white-text" href="#three!" id="bind">
+                    <h2>Bind</h2>
+                  </div>
+                  <div class="carousel-item white-text" href="#four!" id="haven">
+                    <h2>Haven</h2>
+                  </div>
+                  <div class="carousel-item white-text" href="#five!" id="split">
+                    <h2>Split</h2>
+                  </div>
+                  <div class="carousel-item white-text" href="#six!" id="ascent">
+                    <h2>Ascent</h2>
+                  </div>
+            </div>
+            <a class="waves-effect waves-light btn red darken-2 concat" href="https://playvalorant.com/pt-br/maps/" target="_blank">Mapas</a>
+        </section>
+
+            
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.584124552954!2d-51.06450785!3d-30.032668100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199fceb47c85ed%3A0x2dd3606e9688255!2sR.%20Boa%20Esperanca%2C%20383%20-%20Piratini%2C%20Viam%C3%A3o%20-%20RS%2C%2094515-708!5e0!3m2!1spt-BR!2sbr!4v1634773727128!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <footer id="footer">
+            <div id="footer-left">
+                <div id="valorant-site">
+                    <a href="https://playvalorant.com/pt-br/" target="_blank"><p>VALORANT</p></a>
+                </div>
+                <div id="social-media">
+                    <a href="https://twitter.com/VALORANTBrasil" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/PlayVALORANT/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/valorantbrasil/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+         document.ready(function () {
+                ('.carousel').carousel();
+            });
+    </script>
+
+
+    
+</body>
+</html>

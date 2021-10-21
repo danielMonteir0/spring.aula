@@ -1,0 +1,357 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 700%;
+    background-color: #212121;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: #0F1923;
+    box-shadow: none;
+}
+
+p{
+    text-align: center;
+}
+
+#screen-one {
+    width: 100%;
+    height: 15%;
+}
+
+#title{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 30ch;
+    text-align: left;
+    color: aliceblue;
+    padding: 5% 0% 0% 15%;
+}
+
+#sub-title{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    color: aliceblue;
+}
+
+#title-card{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 20ch;
+    text-align: center;
+    color: #212121;
+}
+
+#description-card{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 4ch;
+    text-align: center;
+    color: #0F1923;
+}
+
+#subtitle-agent{
+    font-weight: bold;
+    color:#FF4654;
+}
+
+.title-gallery{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 15ch;
+    text-align: left;
+    color: aliceblue;
+    padding: 0 70% 0 0;
+}
+
+
+
+#principal{
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#top{
+    background-color: #ECE8E1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    margin: 0% 2%;
+    float: left;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sub-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0% 0% 3% 0%;
+}
+
+#sub-content button {
+    margin-left: 10px;
+}
+
+#btn-second-screen{
+    background-color: #FF4654;
+}
+
+#screen-two{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: 100%;
+    justify-content: center;
+}
+
+#new-agent-content {
+    width: 90%;
+    height: 100%;
+    background-color: #ECE8E1;
+}
+
+#new-agent{
+    width: 100%;
+    height: 100%;
+}
+
+#new-agent-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 5%;
+}
+
+#new-agent-banner{
+    width: 90%;
+    height: 70%;
+}
+
+#image-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen-three {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#agent-gallery {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#screen-four {
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#gun-gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+#gun-gallery figure {
+    width: 25%;
+    height: auto;
+    background-color: #ECE8E1;
+    border-radius: 10px;
+    border: 3px solid #111111;
+}
+
+#gun-gallery figure img {
+    width: 100%;
+    height: 100%;
+}
+
+#gun-gallery figure p {
+    font-family: 'Poiret One', cursive;
+    font-size: 4ch;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+#formulary{
+    text-align: center;
+    color:#212121;
+}
+
+#screen-five {
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#map-gallery {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#breeze {
+    background-image: url(/img/breeze.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#icebox {
+    background-image: url(/img/icebox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bind {
+    background-image: url(/img/bind.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#haven {
+    background-image: url(/img/haven.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#split {
+    background-image: url(/img/split.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#ascent {
+    background-image: url(/img/ascent-featured.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    width: 100%;
+    height: 15%;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#valorant-site {
+    font-size: 3ch;
+    font-family: 'Poiret One', cursive;
+}
+
+#valotant-size a {
+    text-decoration: none;
+}
+
+#valorant-site p {
+    color: #7E7E7E;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
+.concat {
+    margin-bottom: 30px;
+}
+
+.modal {
+    display: none; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0); 
+    overflow-y: hidden;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn-form {
+    background-color: #EC525F;
+    border: 1px solid #EC525F;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .btn-form:hover {
+    background-color: rgba(236, 82, 95, 0.9);
+    border: 1px solid rgba(236, 82, 95, 0.9);
+    cursor: pointer;
+  }
